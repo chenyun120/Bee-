@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ui namespace="B0_IndexBoard_iPhone">
+
+  <col class="wrapper">
+		<button id="mask">进入下级页面</button>  /* 这个id的作为  1. 样式蛇者使用  2. 点击事件响应的查询参数 3. 设置为属性和其对应 */
+  </col>
+
+  <style type="text/css">
+    .wrapper {
+        width: 100%;
+        height: 100%;
+    }
+
+	#mask {
+		width: 100%;    /* 设置宽度为百分之百  和当前view一样 */
+		height: 44px;   /* 设置高度为44px   和原生的高度  是同样的定义*/
+		color: #333;    /* 设置颜色，这里是颜色的十六进制*/
+		v-float:center; /* 横向剧中 float 是纵向剧中  */
+		background-color: #fff; /* 设置button的背景颜色  十六进制颜色 */
+	}
+  </style>
+</ui>

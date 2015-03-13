@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ui namespace="B1_Board_iPhone">
+
+<!--
+   col和row两种方式，根据具体的排版要求进行设置
+   col  竖排  在没有对控件设置 position: absolute  属性的时候 ，放在下面的空间会自动的排在上个控件的下面
+   row  横排  在没有对控件设置 position: absolute  属性的时候 ，放在下面的空间会自动的排在上个控件的左面
+   
+   id作为唯一标示符存在，而class则所以控件都可以设置，减少代码量，且便于样式的管理，修改。
+ 
+ -->
+  <col class="wrapper">
+	<button id="mask" class="buttonStyle">返回</button>
+	<button id="maskTwo" class="buttonStyle">进入tableview页面</button>
+  </col>
+   
+  <style type="text/css">
+    .wrapper {
+        width: 100%;
+        height: 100%;
+    }
+
+	#mask {
+		background-color: #333;
+	}
+
+	#maskTwo {
+		background-color: red;
+	}
+
+	<!-- 因为两个按钮控件的class都设置为buttonStyle，所以会同时生效 -->
+	.buttonStyle {
+		top: 100px;  <!-- 相当于设置frame时候的  y值  -->
+		width: 100%;
+		height: 44px;
+		color: #fff;  <!-- 设置字体颜色 -->
+	}
+
+  </style>
+</ui>

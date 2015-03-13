@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ui namespace="AppTabbar_iPhone">
+	<!-- row和col并用  排版 -->
+    <row class="wrapper">
+        <image id="bg"/>
+        <col class="item-wrapper">
+            <image id="index-icon" class="item-icon"></image>  <!-- 设置背景   image相当于UIimageView -->
+            <label id="index-title" class="title">one</label>  <!-- label 相当于UILabel -->
+            <button id="one" class="item-mask"></button>
+        </col>
+        <col class="item-wrapper">
+            <image id="grace-icon" class="item-icon"></image>
+            <label id="grace-title" class="title">two</label>
+            <button id="two" class="item-mask"></button>
+        </col>
+    </row>
+
+    <style type="text/css">
+        #bg {
+            image: url(footer_bg.png);  <!-- 设置UIimageView的的图片 -->
+            image-mode: fit;            <!-- 设置模式  -->
+            position: absolute;			<!-- 不受row和col的影响 -->
+            left: 0;
+            top: 0;
+            background-color: #232323; <!-- 设置背景颜色 -->
+        }
+    
+        .wrapper {
+            width: 100%;
+            height: 100%;
+            float: center;   <!-- 横向 居中 -->
+        }
+
+        .item-wrapper {
+            width: 50%;
+            height: 100%;
+        }
+        
+        .item-icon {
+            width: 22px;
+            height: 22px;
+            margin-top: 5px;
+            float: center;
+        }
+        
+        .title {
+            width: 100%;
+            height: 22px;
+            margin-top: 0px;
+            float: center;
+            text-align: center;  <!-- 字体居中 -->
+            color: #aaaaaa;      <!-- 字体颜色 -->
+            font-size: 13px;     <!-- 字体大小 -->
+        }
+        
+        .item-mask {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+        }
+    
+        </style>
+</ui>
